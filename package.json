@@ -1,0 +1,26 @@
+{
+  "name": "diwali-dhamaka-11",
+  "version": "1.0.0",
+  "description": "DiwaliDhamaka11 - Festive ₹11 Coupon & Bumper Lucky Draw MERN Platform",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node server/server.js",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "seed": "node server/utils/seedOffers.js",
+    "install-all": "npm install && npm --prefix server install && npm --prefix client install"
+  },
+  "keywords": [
+    "diwali",
+    "festive-offers",
+    "lucky-draw",
+    "razorpay",
+    "mern"
+  ],
+  "author": "DiwaliDhamaka11 Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
